@@ -1,0 +1,101 @@
+.tableSearchTable{
+    
+}
+
+.tablesearchVw{
+    width: 100%;
+    transition: all;
+}
+.floating-message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.btnDelete{
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+    margin-left: 10px;
+}
+.btnView{
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+    margin-left: 10px;
+}
+#tablecontainerclient{
+    min-height: 10vh;
+    max-height:60vh;
+    overflow: scroll;
+}
+
+.emailll{
+    width: 10px;
+}
+#emilll{
+    width: 50px;
+}
+/* ClientTableView.css */
+
+/* Ensure table container can scroll horizontally */
+.table-container {
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping in table cells */
+}
+
+/* Define widths for each column */
+.user-table th, .user-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th.sno {
+    width: 50px; /* Example width for S.No */
+}
+
+.user-table th.name {
+    width: 150px; /* Example width for Name */
+}
+
+.user-table th.email {
+    width: 200px; /* Example width for Email */
+}
+
+.user-table th.mobile {
+    width: 120px; /* Example width for Mobile Number */
+}
+
+.user-table th.remarks {
+    width: 150px; /* Example width for Remarks */
+}
+
+.user-table th.created-at {
+    width: 150px; /* Example width for Created At */
+}
+
+.user-table th.actions {
+    width: 100px; /* Example width for Actions */
+}
+
+/* Optional: Add a max-width to handle very large content */
+.user-table td {
+    max-width: 200px; /* Example max-width for content */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

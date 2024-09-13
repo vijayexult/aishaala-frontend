@@ -1,0 +1,240 @@
+
+  .ContainerClientDataset{
+    height: 100vh;
+
+  }
+
+.storageMainContainer{
+    display: flex;
+  
+  
+    
+}
+
+.Storage-containerDatset{
+    display:flex ;
+   
+    justify-content: flex-start;
+    align-items: stretch;
+ 
+    
+}
+
+.containerClient {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+   
+    
+}
+
+.headerClientset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+ 
+    
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.assistant {
+    text-align: center;
+}
+
+.assistant .icon {
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    padding: 10px 0;
+}
+
+.nav-item {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content {
+    background-color: #222;
+    padding: 20px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.tool {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.publish {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: #252525;
+    color: #fff;
+    font-size: 5px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    
+}
+.publishDeleteContainer{
+    display: flex;
+    align-items: center;
+}
+.icondelete{
+    font-size: 15px;
+}
+
+.editor p {
+    margin-left: 20px;
+}
+.nav-item{
+    list-style-type: none;
+}
+
+.clientdatasetContainer{
+    display: flex;
+    
+
+}
+.tablesRows{
+    position: relative;
+    width: 70%;
+    padding: 20px;
+}
+
+.buttonClient{
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+    margin-left: 10px;
+}
+
+.clientFolderAdd{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.tablesRows{
+  
+}
+
+.clientHeader{
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+.light-mode .clientdatasetContainer{
+    background-color: white;
+}
+.light-mode .tablesRows{
+    background-color: white ;
+}
+
+.light-mode .clientdatasetContainer{
+    background-color: white;
+}
+
+
+.floating-success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+/*.chat-area {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .chat-header {
+    margin-bottom: 20px;
+  }
+  .chat-area {
+    padding: 20px;
+  }
+  
+  .light-mode .chat-area .chatbox1{
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+  
+  .dark-mode .chat-area .chatbox1{
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+.chatbox1{
+   font-family: Roboto;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.head-newchat{
+    font-family: Roboto;
+}*/

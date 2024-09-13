@@ -1,0 +1,175 @@
+.mainnAdmin {
+    min-height: 100vh;
+    font-family: Roboto;
+    background-color: grey;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.mainnAdmin::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.mainnAdmin {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.navAdmin {
+    background-color: #121113;
+    color: white;
+    padding: 20px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+
+
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+}
+
+.adminlogo {
+    width: 70px;
+}
+
+.logotext {
+    font-size: 25px;
+}
+
+.user-info {
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebarAdmin {
+    width: 200px;
+    background-color: #1f1d1d;
+    padding: 20px;
+
+    color: #ffffff;
+    height: 85vh;
+    border-radius: 20px;
+    margin: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.phonedetails {
+    display: flex;
+
+
+}
+
+.sidebarAdmin ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebarAdmin li {
+    margin: 15px 0;
+    cursor: pointer;
+
+}
+
+.sidebarAdmin li:hover {
+    color: rgb(0, 47, 255);
+
+    transition: ease-in 0.2s;
+}
+
+.business-list {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: none;
+    background-color: #383838;
+    margin-top: 5px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.business-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.business-list {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.business-card {
+    background: rgb(6, 6, 6);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.business-info h2 {
+    margin: 0;
+    color: #ffd900;
+}
+
+.business-info p {
+    margin: 5px 0;
+}
+
+.login-button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #4a0072;
+}
+
+.add-button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #4a0072;
+}

@@ -1,0 +1,144 @@
+/* voicebox.css */
+
+.video-player {
+  width: 100%;
+  /* Adjust the width as needed */
+  max-width: 800px;
+  /* Set a maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 10px;
+  /* Optional: to add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: to add a subtle shadow */
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  /* Dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  position: relative;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.close-popup-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* index.css */
+
+.viewdemo-button {
+  background-color: #c01b1b;
+  /* Green background */
+  color: white;
+  /* White text color */
+  padding: 10px 20px;
+  /* Padding for the button */
+  border: none;
+  /* Remove the border */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  font-size: 16px;
+  /* Font size */
+  margin-top: 10px;
+  /* Add margin to the top */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.viewdemo-button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+.responsive-iframe {
+  width: 600px !important;
+  height: 400px !important;
+  width: 100%;
+  height: 100%;
+  border: 0;
+
+
+}
+
+.responsive-small-iframe {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  .responsive-iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .responsive-iframe {
+    width: 500px;
+    /* Adjust for medium screens */
+    height: 300px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .responsive-iframe {
+    width: 400px;
+    /* Adjust for smaller screens */
+    height: 250px;
+    display: none !important;
+  }
+
+  .responsive-small-iframe {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .responsive-iframe {
+    width: 100%;
+    /* Full width for very small screens */
+    height: auto;
+    /* Adjust height to maintain aspect ratio */
+    display: none !important;
+  }
+
+  .popup-overlay {
+    width: 100%;
+    height: 100vh !important;
+
+  }
+
+  .popup-content {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .responsive-small-iframe {
+    display: flex !important;
+  }
+}

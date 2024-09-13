@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  height: 100vh;
+  
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

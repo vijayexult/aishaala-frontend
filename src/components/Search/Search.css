@@ -1,0 +1,10 @@
+.search-con{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transition: ease 0.5s;
+}
+.contentinSearch{
+    margin-left: 20px;
+}

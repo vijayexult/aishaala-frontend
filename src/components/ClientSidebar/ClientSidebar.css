@@ -1,0 +1,227 @@
+.sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    border-right:solid 1px #c6c0c0;
+    transition: ease 0.5s;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  
+  .activate-pro {
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    
+    cursor: pointer;
+  }
+
+  .dark-mode .activate-pro{
+    background-color: #000000;
+    color: #f0f0f0;
+  }
+
+  .light-mode .activate-pro{
+    background-color: #000000;
+    color: white;
+  }
+
+  .LegAiLOGOName{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+    
+
+    
+  }
+  .pencilIcon{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+
+  .sidebar {
+    padding: 20px;
+  }
+  
+  .light-mode .sidebar {
+    background-color: #f0f0f0;
+    color: #000000;
+  }
+  
+  .dark-mode .sidebar {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+
+
+
+
+
+.modalContainer2{
+  height: 600px;
+}
+
+.modal2 {
+  font-size: 14px;
+  
+}
+
+
+.modal > .headerclient {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.modal > .contentClient {
+  
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal .popupclass {
+  width: 100px;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px; 
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid gray;
+}
+
+.form-control{
+  display: none;
+}
+
+.inputFileClass{
+  border: solid 1px #252525;
+  height: 20px;
+}
+
+
+.formStyle{
+  padding: 20px;
+  width: 280px;
+}
+
+.form-control{
+  border-color: black !important;
+  width: 270px;
+
+  border: solid 1px grey;
+  margin-bottom: 10px;
+
+  display: block;
+}
+
+
+.formStyle{
+  padding: 5px;
+  text-align: center;
+
+}
+
+.form-control{
+  border-color: grey !important;
+  height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: stretch;
+
+ 
+}
+
+.modal {
+  font-size: 14px;
+  width: 300px; /* Set the desired width */
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  height: 150px;
+  justify-content: center;
+
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnCLassSubmitupload{
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.fileinput{
+  background-color: #d0fffe;
+  margin-top: 0px;
+}
+
+.headingCreateFolder{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.form-control{
+  margin-bottom: 20px;
+}
+.knowledgeSidebar{
+  font-size: 25px;
+  font-family: Roboto;
+}
+
+.modal2{
+    height: 500px;
+}
+
+#modalClient{
+  height: 300px;
+}
+/*
+#sidebarClient{
+  width: 310px;
+}*/
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+.error {
+  color: red;
+  margin-top: 10px;
+}

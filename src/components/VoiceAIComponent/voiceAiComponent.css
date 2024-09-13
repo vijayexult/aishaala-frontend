@@ -1,0 +1,491 @@
+.mainVoiceAssistant {
+  display: flex;
+  height: 100vh;
+}
+
+.voice-ai-container {
+
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-size: cover;
+  width: 95%;
+  color: #fff;
+}
+
+
+.dark-mode {
+  background-color: #000;
+}
+
+.dark-mode .voice-ai-container {
+  background-color: black;
+}
+
+
+.voice-ai-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+
+
+
+}
+
+.voice-ai-connect-button,
+.voice-ai-talk-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 71, 87, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);
+  }
+}
+
+
+
+
+
+.voice-ai-connect-button:hover,
+
+
+.voice-ai-popup {
+
+  bottom: 70px;
+  right: 20px;
+  left: 20px;
+  background-color: #201f1f;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  max-height: 500px;
+
+  order: 1;
+  border-radius: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.voice-ai-popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voice-ai-popup-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voice-ai-profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.voice-ai-profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.voice-ai-profile-greeting {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.voice-ai-recording-time {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.voice-ai-powered-by {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.voice-ai-cancel-button {
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.voice-ai-cancel-button:hover {
+  background-color: #c82333;
+}
+
+@keyframes voice-ai-fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes voice-ai-fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+}
+
+.voice-ai-profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: opacity 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.blink-animation {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.company-logo {
+  height: 25px;
+  width: 25px;
+
+
+  margin-right: 8px;
+}
+
+.voice-ai-talk-button {
+  background-color: transparent;
+  /* Primary color */
+  border: none;
+  border-radius: 50%;
+  /* Circle shape */
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: pluse;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+  font-size: 40px;
+}
+
+
+
+
+
+.blink-animation {
+
+  border-radius: 50%;
+  /* Make it circular */
+  background-color: #ffffff;
+  /* Circle color */
+  animation: blink 1.5s infinite;
+  /* Blinking effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes blink {
+
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.voice-ai-status {
+  font-size: 14px;
+  color: #fff;
+  /* White text for visibility */
+  margin-top: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  /* Text shadow */
+}
+
+.voice-ai-status {
+  font-size: 14px;
+  color: #fff;
+  /* White text for visibility */
+  margin-top: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  /* Text shadow */
+}
+
+.circle-animation {
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+  animation: pluse 1.5s infinite;
+  /* Blinking effect */
+}
+
+@keyframes blink {
+
+  0%,
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* index.css */
+
+.connect-button {
+  margin-top: 15px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 8px;
+
+}
+
+
+.connect-button.disconnected {
+  background-color: #a2a29e;
+  color: white;
+
+}
+
+
+
+
+.connect-button.connecting {
+  background-color: #932007;
+  color: black;
+}
+
+.connect-button.connected {
+  background-color: #46ca09;
+  color: white;
+  cursor: default;
+
+}
+
+
+.voice-ai-controls-container {
+
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+
+}
+
+.voice-ai-talk-button {
+  background-color: transparent;
+  /* Primary color */
+  border: none;
+  border-radius: 50%;
+  /* Circle shape */
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+  /* Pulse animation */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+  font-size: 40px;
+  position: relative;
+  /* Needed for pseudo-elements */
+}
+
+.roboaiicon {
+  width: 100%;
+}
+
+.voice-ai-talk-button::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  /* Match the circle shape */
+  border: 2px solid white;
+  /* White border */
+  opacity: 0;
+  animation: blink 1s infinite;
+  /* Blink animation */
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.dark-mode1 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.light-mode .voice-ai-container {
+  background-color: #fff;
+  color: #000;
+}
+
+.headTitle {
+  font-family: Roboto;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-left: 30px;
+}
+
+@media(max-width:700px) {
+  .mainVoiceAssistant {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw !important;
+    padding: 0px;
+    margin: 0px;
+
+  }
+
+  .voice-ai-container {
+    width: 100% !important;
+    height: 100%;
+
+
+  }
+
+  .voice-ai-controls {
+    width: 100% !important;
+    height: 100%;
+
+  }
+
+
+
+  .headTitle {
+    font-size: 20px;
+    padding-left: 0px;
+    margin-left: 5px;
+    margin-top: 20px;
+    align-items: center;
+    align-self: center;
+  }
+
+  #aico {
+
+    width: 100% !important;
+    height: 100% !important;
+
+  }
+
+  #voiceaicont {
+
+    width: 89% !important;
+    height: 100% !important;
+  }
+
+
+}
