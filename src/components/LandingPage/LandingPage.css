@@ -1683,6 +1683,7 @@
     overflow: hidden;
     box-sizing: content-box;
     margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 10px;
@@ -1709,7 +1710,7 @@
     font-family: Roboto;
     margin-bottom: 50px;
     margin-top: 50px;
-
+    text-align: left;
 
 
 }
@@ -1722,6 +1723,7 @@
     .testimonalsHead {
         margin-left: 10%;
         margin-top: 250px;
+        text-align: left;
     }
 
 }
