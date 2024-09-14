@@ -24,7 +24,7 @@ const App = () => {
     return (
         <div className="App">
             <ParticlesComponent id="particles" />
-            <GoogleOAuthProvider clientId={`${process.env.REACT_APP_GOOGLE_CLIENTID}`}>
+            <GoogleOAuthProvider clientId="722452147364-o9b63kqli85r7l2tsndons0o3o6l8tg4.apps.googleusercontent.com">
                 <BrowserRouter>
                     <ThemeProvider>
                         <Routes>
