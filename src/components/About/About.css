@@ -1,0 +1,131 @@
+/* General dark theme setup */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .img{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: #e0e0e0;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header nav ul li a {
+    color: #e0e0e0;
+    font-size: 18px;
+  }
+  
+  .header nav ul li a:hover {
+    color: #00bcd4;
+  }
+  .h2{
+    text-align: center;
+    margin: 20px;
+    ;
+  }
+  
+  /* Section About */
+  #about {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .founder-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .founder-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .text-content {
+    text-align: center;
+  }
+  
+  blockquote {
+    font-style: italic;
+    color: #b0bec5;
+    margin: 20px 0;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Responsive Styling */
+  @media (min-width: 768px) {
+    .founder-info {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .founder-info img {
+      max-width: 200px;
+      margin-right: 40px;
+    }
+  
+    .text-content {
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .founder-info img {
+      max-width: 80%;
+    }
+  }
+  
