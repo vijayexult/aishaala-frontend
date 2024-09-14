@@ -1,51 +1,43 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Search from './components/Search/Search';
-import { ThemeProvider } from "./components/ThemeContext";
-import StorageComponent from './components/StorageComponent/StorageComponent';
-import Profiles from './components/Profiles/Profiles';
-import VoiceAIComponent from './components/VoiceAIComponent/VoiceAiComponent';
-import './Home.css';
-import ClientDataset from './components/ClientDataset/ClientDataset';
-import ClientProfileView from './components/ClientProfileView/ClientProfileView';
-import Login from './components/Login/Login';
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import LandingPage from "./components/LandingPage/LandingPage"
-import AdminDashboard from './components/AdminPage/AdminDashboard';
-import Blog from './components/Blog/Blog';
-import About from './components/About/About';
+import React from 'react';
+// import ParticlesBackground from './components/ParticlesBackground';
+import ParticlesComponent from './components/particles';
+import Lottie from "lottie-react";
+import Mic from './Mic.json';
+import './App.css';
 
-const App = () => {
-    useEffect(() => {
-        document.title = 'Aishaala';
-    }, []);
-
-    return (
-        <div className="App">
-            <GoogleOAuthProvider clientId="722452147364-o9b63kqli85r7l2tsndons0o3o6l8tg4.apps.googleusercontent.com">
-                <BrowserRouter>
-                    <ThemeProvider>
-                        <Routes>
-                            <Route exact path='/login' element={<Login />} /> 
-                            <Route path='/' element={<LandingPage />} />
-                            <Route path='/admindashboard' element={<AdminDashboard />} />
-                            <Route path="/voiceAi" element={<ProtectedRoute element={VoiceAIComponent} />} />
-                            <Route path="/chat" element={<ProtectedRoute element={Home} />} />
-                            <Route path='/dataset' element={<ProtectedRoute element={StorageComponent} />} />
-                            <Route path="/clientDataset" element={<ProtectedRoute element={ClientDataset} />} />
-                            <Route path="/clientprofile/:id" element={<ProtectedRoute element={ClientProfileView} />} />
-                            <Route path="/search" element={<ProtectedRoute element={Search} />} />
-                            <Route path="/profiles" element={<ProtectedRoute element={Profiles} />} />
-                            <Route  path="/blog" element={<ProtectedRoute element={Blog} />} />
-                            <Route  path="/about" element={<ProtectedRoute element={About} />} />
-                        </Routes>
-                    </ThemeProvider>
-                </BrowserRouter>
-            </GoogleOAuthProvider>
+function App() {
+  return (
+    <div className="app">
+      <ParticlesComponent id="particles" /> 
+      <header className="navbar">
+        <div className="logo">Mobishaala</div>
+        <nav className="nav-links">
+          <a href="/">About</a>
+          <a href="/">Students</a>
+          <a href="/">Teachers</a>
+        </nav>
+        <div className="auth-buttons">
+          <button className="help-btn">Help</button>
+          <button className="signup-btn">Sign Up</button>
         </div>
-    );
-};
+      </header>
+
+      <div className="content">
+        <h1>AI Assistant for Teachers and Students</h1>
+        <p>Experience the future of education with Aishaala Conversational AI, a personalized assistant designed to enhance learning for teachers and students.</p>
+        
+        <div className="mic-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Lottie animationData={Mic} style={{ height: 150, width: 150 }} />
+          <p className='pp'>Click to Talk</p>
+        </div>
+
+        <div className="action-buttons">
+          <button className="try-btn">Try For Free</button>
+          <button className="contact-btn">Get in Touch</button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default App;
