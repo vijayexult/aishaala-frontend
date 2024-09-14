@@ -5,7 +5,7 @@ import Loader from 'react-loader-spinner'
 import { ColorRing, Circles, BallTriangle } from 'react-loader-spinner'
 import { RotatingLines } from 'react-loader-spinner';
 import { faDiscord, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import ParticlesComponent from '../particles';
 import { useNavigate, Link } from 'react-router-dom';
 import { ImCross } from "react-icons/im";
 import { IoCloseSharp } from "react-icons/io5";
@@ -20,7 +20,8 @@ import { MdMenu } from "react-icons/md";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
 import { useGoogleLogin } from "@react-oauth/google";
-
+import Lottie from "lottie-react";
+import Mic from './Mic.json';
 import { jwtDecode } from "jwt-decode";
 import { GoogleLogin } from "@react-oauth/google";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -125,39 +126,45 @@ const LandingPage = () => {
 
     // const videoRef=useRef();
     const footerItems = [
-        { header: " Aishaala ", subHeaders: [{ title: "About Us", path: "" }] },
+        { header: " Aishaala ", subHeaders: [{ title: "About Us", path: "/about" }] },
         { header: "Office", subHeaders: [{ title: "Head Office", path: "" }, { title: "Branch Office", path: "" },] },
-        { header: "Quick Links", subHeaders: [{ title: "Blog", path: "" }, { title: "Admin", path: "/admindashboard" }, { title: "Careers", path: "" }] },
-        { header: "Legal Stuff", subHeaders: [{ title: "Privacy Policy", path: "/privacy-policy" }, { title: "Terms of Service", path: "/terms-conditions" }, { title: "Refunds", path: "/refunds" }, { title: "Disclaimer", path: "/disclaimer" },] },
+        { header: "Quick Links", subHeaders: [{ title: "Blog", path: "/blog" },  { title: "Careers", path: "" }] },
+        { header: "Legal Stuff", subHeaders: [{ title: "Privacy Policy", path: "./pdf/pp.pdf" }, { title: "Terms of Service", path: "/terms-conditions" }, { title: "Refunds", path: "/refunds" }, { title: "Disclaimer", path: "/disclaimer" },{ title: "Admin", path: "/admindashboard" },] },
     ]
 
     const testimonials = [
         {
+            name: "Birbal Jha",
+            designation: "English Trainer",
+            testimonial: "Aishaala is a game-changer in education. With its AI voice assistant, the teacher-to-student ratio effectively becomes 1:1, providing a personalized learning experience."
+        },
+        {
+            name: "Indresh Rao",
+            designation: "UPSC Faculty",
+            testimonial: "Incorporating Aishaala into our UPSC coaching has been a game-changer. The AI assistant's ability to provide personalized guidance and manage vast study materials efficiently has made our preparation process far more organized and effective."
+        },
+        {
+            name: "Samarjeet Tripathi",
+            designation: "UPSC Aspirant",
+            testimonial: "Navigating the complexities of UPSC preparation was daunting until I started using Aishaala. The AI’s support in managing study resources and delivering prompt feedback has made my study sessions more productive and less stressful."
+        },
+        {
             name: "Shashank Sharma",
-            designation: "Judge, District Court",
-            testimonial: "Legalee AI has transformed the way we approach legal proceedings. Its cutting-edge technology has streamlined case management and research, significantly enhancing our efficiency in the courtroom."
-        },
-        {
-            name: "Amit Diwakar",
-            designation: "Advocate, Delhi High Court",
-            testimonial: "As an advocate, staying ahead of legal trends is crucial. Legalee AI’s advanced tools have revolutionized my practice, making legal research faster and more accurate than ever before."
-        },
-        {
-            name: "Sarwar Alam",
-            designation: "Advocate, Supreme Court",
-            testimonial: "Legalee AI is a game-changer in the legal field. It has simplified complex legal processes and provided valuable insights that have improved my practice and client outcomes."
-        },
-        {
-            name: "Sachin Raj",
-            designation: "Security Lawyer, Entrepreneur",
-            testimonial: "Legalee AI has been instrumental in streamlining my legal workflows. Its sophisticated technology has made managing security-related legal matters more efficient and effective."
+            designation: "District Judge",
+            testimonial: "The impact of Aishaala on our legal education has been profound. Its advanced AI features offer seamless access to essential legal knowledge and provide tailored support, significantly enhancing the learning experience for both educators and students."
         },
         {
             name: "Priya Singh",
-            designation: "Author, Entrepreneur",
-            testimonial: "As an author and entrepreneur, Legalee AI has been a vital tool for navigating legal challenges. Its innovative features have made legal research and compliance effortless, saving me valuable time."
+            designation: "Author, Spiritual Mentor",
+            testimonial: "Aishaala has brought a new dimension to my spiritual teachings. The AI’s ability to make lessons interactive and personalized aligns perfectly with my approach, offering deeper insights and a richer experience for my students."
+        },
+        {
+            name: "Devendra Singh Bahadur",
+            designation: "Educationist, Technology Leader, MNC",
+            testimonial: "As someone deeply involved in education and technology, I’m impressed by how Aishaala integrates seamlessly into the learning process."
         }
     ];
+    
 
 
 
@@ -344,6 +351,7 @@ const LandingPage = () => {
     return (
         <>
             <div className="landing-container" >
+            {/* <ParticlesComponent id="particles" />  */}
                 {<div className="navbar-landing">
                     <div className='navbar-left'>
                         <p id="legallehead" onClick={() => { navigate('/') }} className='legaliHead'>Aishaala</p>
@@ -373,9 +381,10 @@ const LandingPage = () => {
                     <p>
                         experience the future of education with Aishaala Conversational AI,<br />a personalized assistant designed to enhance learning for teachers and Students  </p>
                     <div className="microphone-wrapper">
-                        <div className="microphone-icon">
-                            <FontAwesomeIcon className='iconmic' icon={faMicrophone} />
-                        </div>
+                    <div className="mic-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <Lottie animationData={Mic} style={{ height: 150, width: 150 }} />
+                            
+                            </div>
                         <p>Click to Talk</p>
                     </div>
                     <div className='try-get-buttons'>
@@ -388,11 +397,11 @@ const LandingPage = () => {
 
                 </div>
                 {/* page1 */}
-                <BoxComponent content={content2} />
-                <BoxComponent content={content3} />
-                <BoxComponent content={content4} />
-                <BoxComponent content={content5} />
-                <BoxComponent content={content6} />
+                <BoxComponent content={content2} onclick={handleTryForFreeClick} onclicked={() => setSigninPopupOpen(true)}/>
+                <BoxComponent content={content3} onclick={handleTryForFreeClick} onclicked={() => setSigninPopupOpen(true)}/>
+                <BoxComponent content={content4} onclick={handleTryForFreeClick} onclicked={() => setSigninPopupOpen(true)}/>
+                <BoxComponent content={content5} onclick={handleTryForFreeClick} onclicked={() => setSigninPopupOpen(true)}/>
+                <BoxComponent content={content6} onclick={handleTryForFreeClick} onclicked={() => setSigninPopupOpen(true)}/>
 
                 <h1 className='testimonalsHead'>Testimonals</h1>
                 <div className="carousel-container">
@@ -423,7 +432,7 @@ const LandingPage = () => {
                                     <h3 className='headerFooter'>{data.header}</h3>
                                     <div className='footer-col-item'>
                                         {data.subHeaders.map((dat, inde) => (
-                                            <p onClick={() => { dat.title === "Admin" ? navigate(dat.path) : setAddress("") }}>{dat.title}</p>
+                                            <p onClick={() => { dat.title !== "" ? navigate(dat.path) : setAddress("") }}>{dat.title}</p>
                                         ))}
                                     </div>
                                 </div>
