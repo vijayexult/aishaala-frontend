@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { ClipLoader } from "react-spinners"; // Import ClipLoader
+import ParticlesComponent from '../particles';
 
 function SignUpForm() {
   const [username, setUsername] = useState("");
@@ -11,7 +12,7 @@ function SignUpForm() {
   const handleOnSubmit = async (evt) => {
     evt.preventDefault();
     setLoading(true); // Set loading to true when starting the registration process
-
+    
     try {
       const response = await axios.post("https://legai.onrender.com/register", {
         username,
@@ -32,6 +33,7 @@ function SignUpForm() {
 
   return (
     <div className="form-container sign-up-container">
+    {/* <ParticlesComponent id="particles" /> */}
       <form className="signin-signupform" onSubmit={handleOnSubmit}>
         <h1 className="headloginform">Create Account</h1>
         <div className="social-container">
