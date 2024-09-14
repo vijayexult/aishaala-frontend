@@ -4,11 +4,11 @@ import Cookies from "js-cookie"
 import SignInForm from "./SignIn";
 import SignUpForm from "./SignUp";
 import { Navigate } from "react-router-dom";
-
+import ParticlesComponent from '../particles';
 const  Login =()=> {
   const [type, setType] = useState("signIn");
   const token = Cookies.get("token")
-
+  
   if(token!=undefined){
     return <Navigate to="/"/>
   }
@@ -20,9 +20,10 @@ const  Login =()=> {
     }
   };
   const containerClass =
-    "containerlogin " + (type === "signUp" ? "right-panel-active" : "");
+  "containerlogin " + (type === "signUp" ? "right-panel-active" : "");
   return (
     <div className="Applogin">
+      <ParticlesComponent id="particles" />
       <h2 className="headloginform2">Sign in/up Form</h2>
       <div className={containerClass} id="container">
         <SignUpForm />
