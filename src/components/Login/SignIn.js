@@ -3,17 +3,17 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom"; 
 import { ClipLoader } from "react-spinners";
-
+import ParticlesComponent from '../particles';
 const SignInForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false); // Add loading state
   const navigate = useNavigate();
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when starting the login process
+    setLoading(true); 
     try {
       const response = await axios.post("https://legai.onrender.com/login", {
         username,
@@ -33,6 +33,7 @@ const SignInForm = () => {
 
   return (
     <div className="form-container sign-in-container">
+  <ParticlesComponent id="particles" />
       <form className="signin-signupform" onSubmit={handleSubmit}>
         <h1 className="headloginform">Sign In</h1>
         <div className="social-container">
