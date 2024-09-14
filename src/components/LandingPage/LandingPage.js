@@ -129,8 +129,9 @@ const LandingPage = () => {
         { header: " Aishaala ", subHeaders: [{ title: "About Us", path: "/about" }] },
         { header: "Office", subHeaders: [{ title: "Head Office", path: "" }, { title: "Branch Office", path: "" },] },
         { header: "Quick Links", subHeaders: [{ title: "Blog", path: "/blog" },  { title: "Careers", path: "" }] },
-        { header: "Legal Stuff", subHeaders: [{ title: "Privacy Policy", path: "./pdf/pp.pdf" }, { title: "Terms of Service", path: "/terms-conditions" }, { title: "Refunds", path: "/refunds" }, { title: "Disclaimer", path: "/disclaimer" },{ title: "Admin", path: "/admindashboard" },] },
+        ,
     ]
+    const footerItems2 = [{ header: "Legal Stuff", subHeaders: [{ title: "Privacy Policy", path: "https://publuu.com/flip-book/655483/1461378" }, { title: "Terms of Service", path: "https://publuu.com/flip-book/655483/1461370" }, { title: "Refunds", path: "https://publuu.com/flip-book/655483/1461369" }, { title: "Disclaimer", path: "https://publuu.com/flip-book/655483/1461358" },{ title: "Admin", path: "/admindashboard" },] }]
 
     const testimonials = [
         {
@@ -439,6 +440,19 @@ const LandingPage = () => {
                             ))
 
                         }
+                         {footerItems2.length > 0 &&
+                                                                        footerItems2.map((data, index) => (
+                                                                            <div className='footer-col'>
+                                                                                <h3 className='headerFooter'>{data.header}</h3>
+                                                                                <div className='footer-col-item'>
+                                                                                    {data.subHeaders.map((dat, inde) => (
+                                                                                        <p onClick={() => window.open(dat.path, '_blank')}>{dat.title}</p>
+                                                                                    ))}
+                                                                                </div>
+                                                                            </div>
+                                                                        ))
+
+                                                                    }
                     </div>
                     <hr className='footer-line' />
                     <div className='footer-bottom'>
