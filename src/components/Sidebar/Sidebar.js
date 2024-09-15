@@ -39,7 +39,7 @@ function Sidebar({ clickprevious, handleNewChat, isDarkMode, recentQueries }) {
   return (
     <div id="sidebarchat" className={`sidebar sidebarchat ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <h1 className='LegAiLOGOName'>Aishaala</h1>
-      <button className="activate-pro">AI Assistant For Teachers & Students</button>
+      <button className="activate-pro">Personalized AI For Teachers & Students</button>
       <hr className='linehor' />
 
       <div className="pinned-chats">
