@@ -359,7 +359,7 @@ const LandingPage = () => {
                         <p onClick={() => { navigate('/') }}>About</p>
                         <p>Students</p>
                         <p>Teachers</p>
-                        <p onClick={() => { setIsPlaying(p => !p) }}>Business</p>
+                        <p onClick={() => { setIsPlaying(p => !p) }}>Institution</p>
                     </div>
                     <div id="navbarright" className='navbar-right'>
                         <p className='help'>Help</p>
@@ -378,7 +378,7 @@ const LandingPage = () => {
                 </div>
 
                 <div className="hero-section">
-                    <h1>AI Assistant for Teachers and Students</h1>
+                    <h1>AI Assistant for Teachers and Students from this to Personalized AI for Teachers & Students</h1>
                     <p>
                         experience the future of education with Aishaala Conversational AI,<br />a personalized assistant designed to enhance learning for teachers and Students  </p>
                     <div className="microphone-wrapper">
