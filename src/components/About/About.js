@@ -6,10 +6,11 @@ const About = () => {
     <div className="about">
       <section id="about" className="container">
         <h2 className='h2'>About</h2>
+        <img src="https://www.aitota.com/static/media/Vijay%20Kumar%20Circular.525699addc1ebbf83c68.png" alt="Vijay Kumar Singh" className="founder-image" />
+        <div className="center-content"></div>
         <div className="founder-info">
-          {/* <img src="vijay-kumar-singh.jpg" alt="Image" className='img' /> */}
           <div className="text-content">
-            <h3>Vijay Kumar Singh</h3>
+            <h1>Vijay Kumar Singh</h1>
             <p><strong>Founder - Aitota.com</strong><br />Mobishaala.com, Ex-Intel</p>
             <p>Vijay Kumar Singh’s journey is a testament to the power of innovation and impact. An electronic engineer with over 8 years of chip design experience at Intel, Vijay's career began with a deep dive into the technical intricacies of technology. His passion for making a difference soon led him to new realms of possibility.</p>
             <p>He played a pivotal role in developing Swachh Map for Swachh Bharat, dedicating 5 years to driving national social initiatives that aimed to improve public sanitation and awareness. This experience underscored his belief in technology's ability to drive social change.</p>
