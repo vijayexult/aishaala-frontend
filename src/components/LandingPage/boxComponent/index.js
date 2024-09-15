@@ -3,17 +3,23 @@
 import React from 'react';
 import './index.css'; // Ensure you have this CSS file for styling
 
-const BoxComponent = ({ content }) => {
-  const { image, heading, paragraph, order, button } = content;
-
+const BoxComponent = (props) => {
+  const { content, onclick ,onclicked} = props;
+  const { image, heading, paragraph, order, button} = content;
+  const handleClick = () => {
+    onclick();
+  }
+  const handleClicked = () => {
+    onclicked();
+  }
   return (
     <div className="Box-container">
       <div className={`Box-content ${order}`}>
         <h1 className="Box-header">{heading}</h1>
         <p className='Box-Paragraph'>{paragraph}</p>
         <div className="landing-buttons">
-          <button className=" start-now-btn start-button">{button}</button>
-          <button className="signin-button">Already have an Account ? Sign in</button>
+          <button className=" start-now-btn start-button" onClick={handleClick}>{button}</button>
+          <button className="signin-button" onClick={handleClicked}>Already have an Account ? Sign in</button>
         </div>
       </div>
       <div className='Box-content'>
