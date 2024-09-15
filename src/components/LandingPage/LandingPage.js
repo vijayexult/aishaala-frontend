@@ -378,7 +378,7 @@ const LandingPage = () => {
                 </div>
 
                 <div className="hero-section">
-                    <h1 className='head'>Aishaala - Personalized AI for Teachers & Students</h1>
+                    <h1 className='head'>Personalized AI for Teachers & Students</h1>
                     <p>
                         Experience the future of education with Aishaala Conversational AI,<br />a personalized assistant designed to enhance learning for teachers and Students  </p>
                     <div className="microphone-wrapper">
