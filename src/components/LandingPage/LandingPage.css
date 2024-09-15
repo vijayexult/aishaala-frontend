@@ -1238,7 +1238,7 @@
 
     .navbar-landing-mobile {
         display: flex;
-        margin-top: 24px;
+        margin-top: 20px;
     }
 
     .super-inner-left {
@@ -1807,20 +1807,28 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: 30px 10px;
+        padding: 0px 10px !important;
         text-align: top;
+        background-color: #000;
     }
+    .hero-section p {
+        font-size: 0.8rem !important;
+        margin-bottom: 10px;
+        animation: fadeIn 2s ease-in-out;
+        
+    }
+    
 }
 
 .hero-section h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-section p {
     font-size: 1.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
     
 }
@@ -1829,6 +1837,12 @@
     display: inline-block;
     margin-bottom: 30px;
     animation: pulse 2s infinite;
+}
+
+@media (max-width: 768px) {
+    .microphone-wrapper {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -2036,12 +2050,20 @@
     }
 }
 
-
+.address{
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: left;
+}
 
 @media (max-width: 767px) {
     .head {
-        font-size: 11px;
-        font-weight: 300;
+        font-size: 30px !important;
+        font-weight: 200;
+        padding-top: 0px;
+        margin-top: 0px !important;
+        /* background-color: #08f; */
     }
 }
 
