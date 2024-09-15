@@ -383,7 +383,7 @@ const LandingPage = () => {
                         Experience the future of education with Aishaala Conversational AI,<br />a personalized assistant designed to enhance learning for teachers and Students  </p>
                     <div className="microphone-wrapper">
                     <div className="mic-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <Lottie animationData={Mic} style={{ height: 150, width: 150 }} />
+                        <Lottie animationData={Mic} style={{ height: 110, width: 110 }} />
                             
                             </div>
                         <p>Click to Talk</p>
