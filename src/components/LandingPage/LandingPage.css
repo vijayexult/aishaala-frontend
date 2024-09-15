@@ -1726,6 +1726,8 @@
         text-align: left;
     }
 
+    
+
 }
 
 .card-testimonal {
@@ -1803,6 +1805,13 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 10px;
+        text-align: top;
+    }
+}
+
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -1813,6 +1822,7 @@
     font-size: 1.2rem;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-in-out;
+    
 }
 
 .microphone-wrapper {
@@ -1820,6 +1830,8 @@
     margin-bottom: 30px;
     animation: pulse 2s infinite;
 }
+
+
 
 .microphone-icon {
     width: 80px;
@@ -2024,6 +2036,15 @@
     }
 }
 
+
+
+@media (max-width: 767px) {
+    .head {
+        font-size: 11px;
+        font-weight: 300;
+    }
+}
+
 @media (max-width: 767px) {
     .responsive-iframe {
         width: 100%;
@@ -2032,6 +2053,7 @@
         /* Adjust height to maintain aspect ratio */
         display: none !important;
     }
+    
 
     .popup-overlay {
         width: 100%;
