@@ -9,6 +9,8 @@ body, html {
   .img{
     text-align: center;
     margin: 20px;
+    height: 200px;
+    width: 200px;
   }
   
   a {
@@ -82,6 +84,22 @@ body, html {
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
+  }
+  .founder-image {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+  }
+
+  @media (max-width: 767px) {
+    .founder-image {
+      height: 150px;
+      width: 150px;
+    }
   }
   
   .text-content {
