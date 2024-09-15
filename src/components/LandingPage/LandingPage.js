@@ -127,7 +127,7 @@ const LandingPage = () => {
     // const videoRef=useRef();
     const footerItems = [
         { header: " Aishaala ", subHeaders: [{ title: "About Us", path: "/about" }] },
-        { header: "Office", subHeaders: [{ title: "Head Office", path: "" }, { title: "Branch Office", path: "" },] },
+        { header: "Office", subHeaders: [{ title: "Head Office", path: "",matter:"804, 5th Cross, 4th Block<br/>Koramangala, Bengaluru-560095<br/>contact@aishaala.com"}, { title: "Branch Office", path: "",matter:"293 , Saidulajab , Western Marg , New Delhi - 110030" },] },
         { header: "Quick Links", subHeaders: [{ title: "Blog", path: "/blog" },  { title: "Careers", path: "" }] },
         ,
     ]
@@ -378,9 +378,9 @@ const LandingPage = () => {
                 </div>
 
                 <div className="hero-section">
-                    <h1>AI Assistant for Teachers and Students from this to Personalized AI for Teachers & Students</h1>
+                    <h1 className='head'>Aishaala - Personalized AI for Teachers & Students</h1>
                     <p>
-                        experience the future of education with Aishaala Conversational AI,<br />a personalized assistant designed to enhance learning for teachers and Students  </p>
+                        Experience the future of education with Aishaala Conversational AI,<br />a personalized assistant designed to enhance learning for teachers and Students  </p>
                     <div className="microphone-wrapper">
                     <div className="mic-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <Lottie animationData={Mic} style={{ height: 150, width: 150 }} />
@@ -433,7 +433,10 @@ const LandingPage = () => {
                                     <h3 className='headerFooter'>{data.header}</h3>
                                     <div className='footer-col-item'>
                                         {data.subHeaders.map((dat, inde) => (
-                                            <p onClick={() => { dat.title !== "" ? navigate(dat.path) : setAddress("") }}>{dat.title}</p>
+                                            <div key={inde} className='address'>
+                                                <p onClick={() => { dat.title !== "" ? navigate(dat.path) : setAddress("") }}>{dat.title}</p>
+                                                {dat.matter !== "" && <p dangerouslySetInnerHTML={{ __html: dat.matter }}></p>}
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
