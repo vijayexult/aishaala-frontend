@@ -21,7 +21,7 @@
 }
 
 .containerClient {
-    width: 100%;
+    width: 100vw;
     padding-left: 10px;
     padding-right: 10px;
     
