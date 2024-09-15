@@ -1238,7 +1238,7 @@
 
     .navbar-landing-mobile {
         display: flex;
-        margin-top: 20px;
+        
     }
 
     .super-inner-left {
@@ -2002,6 +2002,9 @@
     transition: background-color 0.3s ease;
     /* Smooth transition for hover effect */
 }
+.try-get-buttons{
+    margin-bottom:10px ;
+}
 
 .viewdemo-button:hover {
     background-color: #45a049;
@@ -2060,9 +2063,10 @@
 @media (max-width: 767px) {
     .head {
         font-size: 30px !important;
-        font-weight: 200;
+        font-weight: 600 !important;
         padding-top: 0px;
-        margin-top: 0px !important;
+        margin-top: 2px !important;
+        margin-bottom: 9px !important;
         /* background-color: #08f; */
     }
 }
