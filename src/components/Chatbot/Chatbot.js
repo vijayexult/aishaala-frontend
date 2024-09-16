@@ -421,7 +421,7 @@ const Chatbot = ({ isDarkMode }) => {
 
       <div className="sidebarmobile">
 
-        <Sidebar handleNewChat={handleNewChat} clickprevious={clickpreviousmsg} recentQueries={recentQueries} isDarkMode={isDarkMode} />
+        <Sidebar handleNewChat={handleNewChat} clickprevious={clickpreviousmsg} recentQueries={recentQueries} isDarkMode={isDarkMode} name="Chats"/>
       </div>
       <div className={`chat-area chatareamobile ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
         <div className="chatbox chatboxmobile" >
@@ -470,12 +470,12 @@ const Chatbot = ({ isDarkMode }) => {
         </div>
         <div className="promptBtnContainer">
         <Link className='linkele' to="/voiceAi">
-        <Tooltip className="custom-tool" content="Voice Chat" placement="left">
+        
               <button className="chatbot-btn">
                 {/*<FontAwesomeIcon icon={faHeadset} />*/}
                 <img src='https://res.cloudinary.com/dcwxu3d5g/image/upload/v1721306399/Task%20internship/bot_icon_tfcqux.png' alt="roboAiNav" className='roboaiiconNav' />
               </button>
-              </Tooltip>
+              
             </Link>
             </div>
         <div className="promptBtnContainer">
@@ -667,3 +667,4 @@ const Chatbot = ({ isDarkMode }) => {
 };
 
 export default Chatbot;
+
