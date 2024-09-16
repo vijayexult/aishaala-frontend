@@ -6,6 +6,7 @@ import SideNavigationBar from '../SideNavigationBar/SideNavigationBar';
 import { FaCommentDots } from "react-icons/fa";
 import 'react-h5-audio-player/lib/styles.css';
 import "./voiceAiComponent.css";
+import Sidebar from '../Sidebar/Sidebar';
 import {Tooltip} from "@nextui-org/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
@@ -211,6 +212,7 @@ const VoiceAIComponent = () => {
     <>
       <div className='mainVoiceAssistant'>
         <SideNavigationBar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+        <Sidebar  isDarkMode={isDarkMode} name="Voices"/>
         <div id='aico' className={`storageMainContainer ${isDarkMode ? 'dark-mode dark-mode1' : 'light-mode dark-mode1'}`}>
           <h1 className='headTitle'>
             Aishaala - AI Assistant For Teachers & Students
