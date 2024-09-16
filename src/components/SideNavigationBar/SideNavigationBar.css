@@ -13,35 +13,43 @@
   transition: ease 0.5s;
 }
 
-.tabiconsContainer {
-  list-style-type: none;
+.tabiconsContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   width: 100%;
-  text-align: center;
-  padding: 0px;
-  padding-left: 0px;
-  margin: 0px;
+  height: 100%;
 }
 
-.tabiconsContainer {
-  margin-top: 30px;
+
+
+.custom-tool {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 20px;
+  margin-left: 0px;
 }
 
-.litag {
-  padding: 10px;
-
+.litag1, .litag {
+  padding: 5px;
   width: 100%;
   cursor: pointer;
-  font-size: 25px;
-  margin-bottom: 10px;
-
-
+  margin-bottom: 2px;
+  list-style: none;
+}
+.litag1{
+  width: 100%;
 }
 
 .litag:hover {
   color: #007bff;
   width: 90%;
-
-
 }
 
 .activeTag {
@@ -50,7 +58,13 @@
   color: #f3f3f3;
 }
 
-
+.light-mode .side-navigation-bar, .dark-mode .side-navigation-bar {
+  border-right: solid 0.5px rgb(215, 200, 200);
+  padding-right: 10px;
+  min-height: 100vh;
+  height: 100vh;
+  transition: ease 0.5s;
+}
 
 .light-mode .side-navigation-bar {
   background-color: #f3f3f3;
@@ -71,12 +85,9 @@
 }
 
 .theme-toggle {
-  margin-top: 20px;
-
   width: 100%;
   height: 35px;
   padding-bottom: 0px;
-
 }
 
 .theme-togglemain {
@@ -94,6 +105,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 30px;
   margin-left: 10px;
 }
 
@@ -105,36 +117,24 @@
   color: white;
 }
 
-/* Add your existing styles */
-
-/* Example active class style */
 .litag.active {
-
-  /* Change to your desired active color */
   color: #007bff;
 }
 
 .roboaiiconNav {
-  width: 48%;
-
+  width: 40%;
+  
 }
 
-
-
-@media(width<=600px) {
+@media (width <= 600px) {
   .side-navigation-bar {
     display: none;
   }
-
-
 }
-
-
 
 @media (max-width: 768px) {
   .navbar {
     display: flex;
-
     justify-content: space-between !important;
     align-items: center;
     background-color: #780a0a;
@@ -228,12 +228,27 @@
   .litag {
     font-size: 15px;
     padding: 0px;
-
   }
 }
 
-@media(min-width:770px) {
+@media (min-width: 770px) {
   .navbar {
     display: none !important;
   }
+}
+
+.icon-wrapper:hover .label {
+  display: block;
+  opacity: 0;
+  visibility: visible;
+}
+
+.tabiconsContainer {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  padding-left: 0px;
+  margin: 0px;
+  margin-top: 2px;
 }
