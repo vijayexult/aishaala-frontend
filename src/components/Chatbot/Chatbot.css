@@ -217,15 +217,37 @@ h3 {
   margin-bottom: 10px;
 }
 .roboaiiconNav{
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 .chatbot-btn{
   background-color: #6200ea;
   color: white;
   border: none;
   margin-left: 10px;
-  height: 70px;
+  margin-right: 25px;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.chatbot-btn:hover{
+  background-color: #4b4b4b;
+}
+.chatbot-btn:active{
+  background-color: #4b4b4b;
+}
+.chatbot-btn:focus{
+  background-color: #4b4b4b;
+}
+.chatbot-btn:disabled{
+  background-color: #4b4b4b;
+}
+.chatbot-btn:disabled:hover{
+  background-color: #4b4b4b;
+}
+.chatbot-btn:disabled:active{
   margin-right: 20px;
   cursor: pointer;
   border-radius: 12px;
