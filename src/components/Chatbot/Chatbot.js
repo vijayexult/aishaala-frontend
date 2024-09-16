@@ -1,5 +1,6 @@
 // src/Chatbot.js
 import "./Chatbot.css"
+import { Link } from "react-router-dom";
 import React, { useEffect, useState, useRef, Fragment } from 'react';
 import axios from 'axios';
 import Popup from "reactjs-popup";
@@ -9,6 +10,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { IoReloadCircleOutline } from 'react-icons/io5';
 import { marked } from 'marked';
 import Message from './Message';
+import {Tooltip} from "@nextui-org/react";
 import DOMPurify from 'dompurify';
 import { text } from "@fortawesome/fontawesome-svg-core";
 import { json } from "react-router-dom";
@@ -466,6 +468,16 @@ const Chatbot = ({ isDarkMode }) => {
           )}
           <div ref={messagesEndRef} />
         </div>
+        <div className="promptBtnContainer">
+        <Link className='linkele' to="/voiceAi">
+        <Tooltip className="custom-tool" content="Voice Chat" placement="left">
+              <button className="chatbot-btn">
+                {/*<FontAwesomeIcon icon={faHeadset} />*/}
+                <img src='https://res.cloudinary.com/dcwxu3d5g/image/upload/v1721306399/Task%20internship/bot_icon_tfcqux.png' alt="roboAiNav" className='roboaiiconNav' />
+              </button>
+              </Tooltip>
+            </Link>
+            </div>
         <div className="promptBtnContainer">
           <button onClick={popupbtnClicked} className="prompsBtn">
             Prompts
