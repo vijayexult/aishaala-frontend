@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons'
 import { json } from 'react-router-dom';
 
-function Sidebar({ clickprevious, handleNewChat, isDarkMode, recentQueries }) {
+function Sidebar(props) {
+  const { clickprevious, handleNewChat, recentQueries, isDarkMode ,name} = props;
   const [isAnimating, setIsAnimating] = useState(false);
   const clicktheHistory = (message) => {
     clickprevious(message)
@@ -43,7 +44,7 @@ function Sidebar({ clickprevious, handleNewChat, isDarkMode, recentQueries }) {
       <hr className='linehor' />
 
       <div className="pinned-chats">
-        <h1>Chats</h1>
+        <h1>{name}</h1>
         <button onClick={handleNewChatClick} className={`new-chat ${isAnimating ? 'animate' : ''}`}>New Chat
           <FontAwesomeIcon className='pencilIcon' icon={faPencil} />
         </button>
