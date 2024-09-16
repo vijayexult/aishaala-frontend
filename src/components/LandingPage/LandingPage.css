@@ -1807,7 +1807,7 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        margin-top: 10px !important;
+        margin-top: 0px !important;
         padding: 0px 10px !important;
         text-align: top;
         background-color: #000;
@@ -1840,12 +1840,14 @@
     /* margin-top: 20px; */
     margin-bottom: 30px;
     animation: pulse 2s infinite;
+    
 }
 
 @media (max-width: 768px) {
     .microphone-wrapper {
-        margin-top: 18px;
-        margin-bottom: 13px;
+        margin-top: 20px;
+        /* background-color: #08f; */
+        margin-bottom: 9px;
     }
 }
 
@@ -2069,7 +2071,7 @@
         font-size: 30px !important;
         font-weight: 600 !important;
         padding-top: 0px;
-        margin-top: 2px !important;
+        margin-top: 8px !important;
         margin-bottom: 9px !important;
         /* background-color: #08f; */
     }
