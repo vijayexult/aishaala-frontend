@@ -1800,20 +1800,22 @@
 
 .hero-section {
     text-align: center;
-    padding: 100px 20px;
+    padding: 60px 20px;
     background-color: #000;
     color: #fff;
 }
 
 @media (max-width: 768px) {
     .hero-section {
+        margin-top: 10px !important;
         padding: 0px 10px !important;
         text-align: top;
         background-color: #000;
     }
     .hero-section p {
         font-size: 0.8rem !important;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         animation: fadeIn 2s ease-in-out;
         
     }
@@ -1835,13 +1837,15 @@
 
 .microphone-wrapper {
     display: inline-block;
+    /* margin-top: 20px; */
     margin-bottom: 30px;
     animation: pulse 2s infinite;
 }
 
 @media (max-width: 768px) {
     .microphone-wrapper {
-        margin-bottom: 15px;
+        margin-top: 18px;
+        margin-bottom: 13px;
     }
 }
 
