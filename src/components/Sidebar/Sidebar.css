@@ -76,7 +76,15 @@
   background-color: #333333;
   color: #ffffff;
 }
+.light-mode .sidebarchat {
+  background-color: #f0f0f0 !important;
+  color: #000000;
+}
 
+.dark-mode .sidebarchat {
+  background-color: #333333;
+  color: #ffffff;
+}
 .new-chat {
   background-color: #ffcc00;
   border: none;
@@ -171,6 +179,10 @@
 
 #sidebarchat {
   max-height: 94.5%;
+  background-color: #333;
+}
+.light-mode{
+  background-color: #c0c0c0!important;
 
 }
 
